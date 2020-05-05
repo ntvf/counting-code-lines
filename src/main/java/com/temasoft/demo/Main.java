@@ -1,17 +1,13 @@
 package com.temasoft.demo;
 
-import java.io.IOException;
-
 public class Main {
 
-  public static void main(String[] args) throws IOException {
-    String path = args[0];
-    start(path);
+  public static void main(String[] args) {
+    start(args[0]);
   }
 
-  private static void start(String path) throws IOException {
+  private static void start(String path) {
     new CountingLines().process(path);
   }
-
 
 }
